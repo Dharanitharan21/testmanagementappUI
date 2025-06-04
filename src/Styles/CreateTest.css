@@ -1,0 +1,62 @@
+.create-test-card {
+  max-width: 640px;
+  margin: 2rem auto;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.create-test-header {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.create-test-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.create-test-subtitle {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.create-test-content {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.create-test-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.form-input,
+.form-textarea {
+  background-color: white;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .form-actions {
+    flex-direction: row;
+  }
+}
