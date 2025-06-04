@@ -16,17 +16,16 @@ function App() {
   return (
     <>
     <BrowserRouter>
-       <Toaster position="top-right" />
+       <Toaster richColors position="top-right" />
     <Routes>
       <Route path='/' element={<LoginForm/>}/>
+      <Route>
       <Route path='/dashboard' element={<AdminDashboard/>}/>
       <Route path='/testlist' element={<TestList/>}/>
       <Route path='/Createtest' element={<CreateTest/>}/>
       <Route path='/CreateQuestiion' element={<CreateQuestion/>}/>
       <Route path='/bulkupload' element={<BulkUpload/>}/>
-
-
-
+      </Route>
     </Routes>
     </BrowserRouter>
     </>

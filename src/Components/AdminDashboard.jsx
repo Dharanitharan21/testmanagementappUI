@@ -13,6 +13,7 @@ import CreateQuestion from './CreateQuestion';
 import BulkUpload from './BulkUpload';
 import axiosInstance from '../Components/axiosintense';
 import { useNavigate } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
 
 const AdminDashboard = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -140,6 +141,10 @@ const AdminDashboard = () => {
         );
     }
   };
+  const token = localStorage.getItem("token");
+  if (!token) {
+    return <Navigate to="/" />;
+  }
 
   return (
     <div className="dashboard-wrapper">
